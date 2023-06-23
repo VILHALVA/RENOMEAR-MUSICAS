@@ -1,5 +1,7 @@
 # APP-RENOMEAR-MUSICAS
 🎈RENOMEIE AS MÚSICAS GLOBALMENTE.
+[![GitHub Repo stars](https://img.shields.io/badge/VILHALVA-GITHUB-03A9F4?logo=github)](https://github.com/VILHALVA)
+[![GitHub Repo stars](https://img.shields.io/badge/MEUS-CURSOS-03A9F4?logo=github)](https://github.com/VILHALVA?tab=repositories&q=CURSO&type=public&language=&sort=)
 
 ## 🤎O QUE ELE FAZ?
 Este projeto permite que você renomeie facilmente arquivos de músicas em um diretório selecionado. Ele adiciona um nome universal seguido de um número sequencial aos nomes dos arquivos. Isso é útil quando você tem uma pasta com músicas que possuem nomes diferentes e deseja padronizá-los.
