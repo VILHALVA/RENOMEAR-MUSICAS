@@ -36,7 +36,7 @@ Isso garante que todas as músicas tenham o mesmo nome inicial (nesse caso, "FAI
 
 2. Acesse o diretório do projeto:
    ```bash
-   cd RENOMEAR
+   cd renomear-musicas
    ```
    
 3. Execute o script Python:
