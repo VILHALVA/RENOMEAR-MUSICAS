@@ -15,7 +15,7 @@ Por exemplo, suponha que você tenha um diretório com as seguintes músicas:
 3. Music C.mp3
 ```
 
-Após executar o projeto e seguir as etapas mencionadas anteriormente, as músicas seriam renomeadas para:
+Após executar o projeto, as músicas seriam renomeadas para:
 ```
 1. FAIXA 01.mp3
 2. FAIXA 02.mp3
