@@ -49,4 +49,3 @@ Isso garante que todas as músicas tenham o mesmo nome inicial (nesse caso, "FAI
 
 - Certifique-se de ter o Python 3.x instalado em seu sistema.
 - Dependendo da configuração do seu sistema, você pode precisar executar o comando `python3` em vez de `python` para executar o script Python.
-```
