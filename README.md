@@ -1,7 +1,7 @@
 # RENOMEAR MUSICAS
 🎈RENOMEIE AS MÚSICAS GLOBALMENTE.
 
-<img src="FOTO.png" align="center" width="300"> <br>
+<img src="FOTO.png" align="center" width="500"> <br>
 
 ## DESCRIÇÃO:
 Este projeto permite que você renomeie facilmente arquivos de músicas em um diretório selecionado. Ele adiciona um nome universal seguido de um número sequencial aos nomes dos arquivos. Isso é útil quando você tem uma pasta com músicas que possuem nomes diferentes e deseja padronizá-los.
