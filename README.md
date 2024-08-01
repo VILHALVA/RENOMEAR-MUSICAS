@@ -22,7 +22,10 @@ Após executar o projeto, as músicas seriam renomeadas para:
 Isso garante que todas as músicas tenham o mesmo nome inicial (nesse caso, "FAIXA") seguido de um número sequencial, facilitando a organização e a identificação das faixas.
 
 ## EXECUTANDO O PROJETO:
-1. Execute o arquivo Python que você acabou de criar.
+1. Navegue até o diretório `./CODIGO`, e execute o arquivo Python com o comando:
+```bash
+python CODIGO.py
+```
 2. Isso abrirá uma janela do aplicativo "RENOMEAR MÚSICAS".
 3. Clique no botão "SELECIONAR" para escolher o diretório onde estão localizadas suas músicas.
 4. Digite um nome universal desejado no campo "NOME UNIVERSAL".
