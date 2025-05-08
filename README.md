@@ -4,33 +4,70 @@
 <img src="FOTO.png" align="center" width="500"> <br>
 
 ## DESCRIÇÃO:
-Este projeto permite que você renomeie facilmente arquivos de músicas em um diretório selecionado. Ele adiciona um nome universal seguido de um número sequencial aos nomes dos arquivos. Isso é útil quando você tem uma pasta com músicas que possuem nomes diferentes e deseja padronizá-los.
-Por exemplo, suponha que você tenha um diretório com as seguintes músicas:
+Este projeto permite que você renomeie facilmente arquivos de músicas em um diretório selecionado. Ele adiciona um nome universal seguido de um número sequencial aos nomes dos arquivos, **respeitando a ordem das faixas definida nas tags ID3 (tracknumber)**.
+
+Isso é especialmente útil quando você tem uma pasta com músicas que possuem nomes diferentes e deseja padronizá-los mantendo a ordem correta do álbum — assim como você vê ao classificar por "Faixa" no Windows Explorer.
+
+Por exemplo, suponha que você tenha um diretório com as seguintes músicas (com os metadados de faixa configurados corretamente):
+
 ```
-1. Song A.mp3
-2. Track B.mp3
-3. Music C.mp3
+1. Song A.mp3 (Faixa 2)
+2. Track B.mp3 (Faixa 1)
+3. Music C.mp3 (Faixa 3)
 ```
 
-Após executar o projeto, as músicas seriam renomeadas para:
+Após executar o projeto com o nome universal "FAIXA", as músicas seriam renomeadas para:
+
 ```
-1. FAIXA 01.mp3
-2. FAIXA 02.mp3
-3. FAIXA 03.mp3
+1. FAIXA 01.mp3  ← (Track B)
+2. FAIXA 02.mp3  ← (Song A)
+3. FAIXA 03.mp3  ← (Music C)
 ```
 
-Isso garante que todas as músicas tenham o mesmo nome inicial (nesse caso, "FAIXA") seguido de um número sequencial, facilitando a organização e a identificação das faixas.
+Isso garante que todas as músicas:
+
+* Tenham o mesmo nome inicial (ex: "FAIXA");
+* Sejam ordenadas corretamente com base na numeração de faixa;
+* Sejam facilmente organizadas e identificadas.
 
 ## EXECUTANDO O PROJETO:
-1. Navegue até o diretório `./CODIGO`, e execute o arquivo Python com o comando:
+### 1. INSTALE AS DEPENDÊNCIAS:
+Antes de iniciar o aplicativo, é necessário instalar as bibliotecas utilizadas no projeto. No terminal, execute:
+
 ```bash
+pip install -r requirements.txt
+```
+
+> 💡 O arquivo `requirements.txt` está localizado dentro da pasta `./CODIGO`.
+
+### 2. EXECUTE O APLICATIVO:
+Acesse o diretório do código e inicie o programa com:
+
+```bash
+cd CODIGO
 python CODIGO.py
 ```
-2. Isso abrirá uma janela do aplicativo "RENOMEAR MÚSICAS".
-3. Clique no botão "SELECIONAR" para escolher o diretório onde estão localizadas suas músicas.
-4. Digite um nome universal desejado no campo "NOME UNIVERSAL".
-5. Clique no botão "RENOMEAR" para iniciar o processo de renomeação das músicas no diretório selecionado.
-6. Aguarde até que o processo seja concluído. Quando terminar, a mensagem "Renomeação concluída!" será exibida na janela.
+
+### 3. USE O APLICATIVO:
+Após a execução, uma janela chamada **"RENOMEAR MÚSICAS"** será exibida. Siga os passos abaixo:
+
+1. Clique em **"SELECIONAR"** para escolher a pasta onde estão suas músicas `.mp3`.
+
+2. No campo **"NOME UNIVERSAL"**, digite o nome base que será usado para renomear todas as músicas (por exemplo, `FAIXA`, `MUSICA`, etc.).
+
+3. Clique em **"RENOMEAR"** para iniciar o processo.
+
+4. O app irá:
+
+   * Ler as tags ID3 das músicas (especificamente a faixa — `tracknumber`);
+   * Ordenar os arquivos com base na ordem das faixas;
+   * Renomeá-los com o nome universal seguido da numeração sequencial.
+
+5. Quando a renomeação for concluída, será exibida a mensagem:
+
+   ```
+   Renomeação concluída!
+   ```
 
 ## SOBRE O EXECUTAVEL:
 ### 1. EXECUTANDO:
